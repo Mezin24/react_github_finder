@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-function Footer(props) {
+function Footer() {
   const footerYear = new Date().getFullYear()
 
   return (
@@ -16,6 +15,5 @@ function Footer(props) {
   )
 }
 
-Footer.propTypes = {}
 
 export default Footer
