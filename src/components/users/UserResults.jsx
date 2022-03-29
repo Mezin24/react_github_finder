@@ -20,14 +20,13 @@ function UserResults() {
     )
 
     const data = await response.json()
-    console.log(data)
     setUsers(data)
     setLoading(false)
   }
 
   if (!loading) {
     return (
-      <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2">
+      <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-8">
         {users.map(user => (
           <h3 key={user.id}>{user.login}</h3>
         ))}
